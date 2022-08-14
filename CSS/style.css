@@ -166,6 +166,7 @@ h1,h2,h3,h4{
     text-align: center;
     color: var(--primary-text);
     opacity: 0.5;
+    margin-bottom: 2rem;
 }
 .about-text .primary-heading{
     margin-top: 3rem;
