@@ -156,7 +156,10 @@ h1,h2,h3,h4{
     color: var(--helper-color);
     background-color: var(--primary-text);
 }
-
+.imgsel::selection{
+    background: var(--primary-text);
+    color: var(--primary-text);
+}
 /* About Section Starts */
 .starthead{
     font-family: 'Poppins', sans-serif;
