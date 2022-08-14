@@ -46,7 +46,7 @@ h1,h2,h3,h4{
     color: var(--para-color);
 }
 .section{
-    padding: 9.6rem;
+    padding: 9.6rem 4rem 0rem 4rem;
 }
 .container{
     max-width: 130rem;
@@ -142,12 +142,19 @@ h1,h2,h3,h4{
     width: 40rem;
     border-radius: 4rem;
 }
+.hero-text{
+    margin: 3rem 0 0 0;
+}
 .grid{
     display: grid;
     gap: 5rem;
 }
 .grid-two-col{
     grid-template-columns: repeat(2,1fr);
+}
+.primary-heading::selection, .hero-text .para::selection, .hero-text .btn::selection{
+    color: var(--helper-color);
+    background-color: var(--primary-text);
 }
 
 /* About Section Starts */
@@ -158,5 +165,26 @@ h1,h2,h3,h4{
     text-transform: lowercase;
     text-align: center;
     color: var(--primary-text);
-    opacity: 0.9;
+    opacity: 0.5;
+}
+.about-text .primary-heading{
+    margin-top: 3rem;
+}
+.about-text .para{
+    margin-bottom: 1rem;
+}
+.about-img{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 4rem;
+}
+.about-text .primary-heading::selection,
+.about-text .para::selection,
+.about-text .btn::selection{
+    color: var(--helper-color);
+    background-color: var(--primary-text);
+}
+.starthead::selection{
+
+    background: var(--helper-color);
 }
