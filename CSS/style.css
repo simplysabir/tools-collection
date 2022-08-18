@@ -240,6 +240,56 @@ header{
 }
 
 
+
+/* EXPLORE / TOOLS SECTION */
+.explore .para{
+    text-align: center;
+    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
+    
+}
+.explore .starthead{
+    margin-bottom: 1rem;
+}
+.box img{
+    height: 18rem;
+    width: 18rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.explore .grid{
+    display: grid;
+    gap: 7rem;
+}
+.grid-three-col{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.explore img::selection, .explore .btn::selection, .explore .para::selection{
+    background: var(--primary-text);
+    color: var(--helper-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Making Responsive */
 @media (max-width:990px){
     .container{
@@ -268,6 +318,9 @@ header{
     }
     .hero-text{
         margin-top: 4rem;
+    }
+    .explore .container{
+        width: 90%;
     }
 }
 @media (max-width:775px){
@@ -326,6 +379,10 @@ header{
     .navbar{
         justify-content: flex-end;
     }
+    .explore .container{
+       margin: 0 auto;
+    }
+    
     
 }
 @media (max-width:635px){
@@ -337,6 +394,20 @@ header{
     }
     .section{
         padding: 6rem 2rem 2rem 2rem;
+    }
+    .starthead{
+        margin: 0 auto;
+
+    }
+    .explore .para{
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .grid-three-col{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .explore .grid{
+        gap: 3rem;
     }
    
 }
@@ -352,12 +423,53 @@ header{
         font-size: 1.6rem;
         line-height: 1.7;
     }
+    .grid-three-col{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .explore .grid{
+        gap: 1.5rem;
+        column-gap: 2rem;
+    }
+    .explore .para{
+        margin: 0 0 0 7rem;
+    }
 }
 @media (max-width:325px){
     .header{
         margin-bottom: 5rem;
     }
-    
+    .box img{
+        width: 15rem;
+        height: 15rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+    .explore .btn{
+        margin: 0 auto;
+    }
+    .grid-three-col{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid{
+       display: grid;
+       
+    }
+    .explore .btn{
+        margin-bottom: 2rem;
+    }
+    .explore .container{
+        width: 100%;
+    }
+    .boxes{
+        margin-left: 40%;
+    }
+    .starthead{
+        padding: 0 0 0 9rem;
+    }
+    .explore .para{
+        font-size: 1.3rem;
+        margin: 0 0 0 8rem;
+    }
 }
 @media (max-width:215px){
     .starthead{
@@ -366,6 +478,14 @@ header{
     .para{
         font-size: 1.6rem;
         line-height: 1.7;
+    }
+    .explore .para{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        margin-left: 17rem;
+    }
+    .boxes{
+        margin-left: 12rem;
     }
 }
 @media (max-width:180px){
